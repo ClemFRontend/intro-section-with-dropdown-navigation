@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './DropdownList.css'
 
-import ICON_ARROW_DOWN from '../../assets/icons/icon-arrow-down.svg'
-// import ICON_ARROW_UP from '../../assets/icon-arrow-up.svg'
-
 /**
  * 
  * Englobe dropdown menus
@@ -68,12 +65,7 @@ export function DropdownMenu({title, className, icon, children, ...props}) {
             <button type='button' onClick={() => toogleDisplay()}>
                 {title}
                 {icon === undefined ?
-                    <img 
-                        style={{rotate: rotation}}
-                        src={ICON_ARROW_DOWN} alt='arrow' 
-                        width={10}
-                        height={6} 
-                    />
+                    <svg style={{rotate: rotation}} width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="currentColor" strokeWidth="1.5" fill="transparent" d="m1 1 4 4 4-4"/></svg>
                     :
                     icon
                 }
@@ -94,7 +86,7 @@ export function DropdownMenu({title, className, icon, children, ...props}) {
  * @param {String} children
  * @returns 
  */
-export function Element({icon, hideDot=false, onClick, children, ...props}) {
+export function Element({notAText, icon, hideDot=false, onClick, children, ...props}) {
 
     // let isDot = ""
     // if (icon === undefined && hideDot === false) {
@@ -110,7 +102,8 @@ export function Element({icon, hideDot=false, onClick, children, ...props}) {
                     {icon}
                 </div>
             }
-            <p>{children}</p>
+            {notAText ? <>{children}</> : <p>{children}</p>}
+            
         </li>
     )
 }

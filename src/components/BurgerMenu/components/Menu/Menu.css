@@ -14,13 +14,18 @@ html, body {
     top: 0;
     right: 0;
     transform: translateX(100%);
-    transition: transform 0.2s ease-out;
+    transition: all 0.2s ease-out;
     padding: 78px 21px 0 24px;
 }
 
 .dark .menu-wrapper {
-    background-color: black;
+    background-color: var(--dark-theme);
 }
+
+li.btn.btn-tiercary {
+    margin-top: 30px;
+}
+
 
 .background {
     background-color: black;
@@ -52,11 +57,18 @@ html, body {
         width: 100%;
         height: 42px;
         padding: 0;
+        background-color: transparent;
+    }
+
+    .dark .menu-wrapper {
+        background-color: transparent;
     }
 
     li.btn.btn-tiercary {
         position: relative;
         float: right;
+        margin-top: 0;
+
     }
 
     .dropdown-list > li {

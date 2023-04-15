@@ -1,5 +1,4 @@
 .switch-input {
-    /* height: 30px; */
     display: block;
 }
 
@@ -35,5 +34,5 @@
 }
 
 .switch-input input:checked ~ label {
-    background-color: #9071AE;
+    background-color: var(--blue);
 }

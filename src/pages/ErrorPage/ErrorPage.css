@@ -18,6 +18,10 @@
     margin-top: 20px;
 }
 
+.dark #error-page img {
+    mix-blend-mode: difference;
+}
+
 @media screen and (min-width: 1000px) {
     #error-page {
         flex: 1;

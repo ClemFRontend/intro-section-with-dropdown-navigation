@@ -7,6 +7,7 @@ import ICON_REMINDERS from '../../../../assets/icons/icon-reminders.svg'
 import ICON_PLANNING from '../../../../assets/icons/icon-planning.svg'
 import { useNavigate } from 'react-router-dom'
 import { DropdownList, DropdownMenu, Element } from '../../../DropdownList/DropdownList'
+import ThemeSwitcher from '../../../ThemeSwitcher/ThemeSwitcher'
 
 const FEATURES = [
   {title: "Todo List", icon: ICON_TODO, url: "todo", width: "17.5", height: "20", alt: "icon to do"},
@@ -50,6 +51,7 @@ function Menu({isOpen, handleChange}) {
           <Element className='url' onClick={() => navigate('/careers')}>Careers</Element>
           <Element className='url' onClick={() => navigate('/About')}>About</Element>
           <Element className='flex-1'></Element>
+          <Element notAText={true} className=''><ThemeSwitcher /></Element>
           <Element className='btn btn-tiercary center' onClick={() => navigate('/login')}>Login</Element>
           <Element className='btn btn-secondary center' onClick={() => navigate('/register')}>Register</Element>
         </DropdownList>
