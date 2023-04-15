@@ -1,0 +1,165 @@
+/* Dropdown list */
+
+.dropdown-list button {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    color: var(--medium-grey);
+}
+
+.dropdown-list,
+.dropdown-list p,
+.dropdown-list li,
+.dropdown-list ul { 
+    list-style-type: none; /* Remove marker */
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.dropdown-list li.url {
+    cursor: pointer;
+}
+
+
+.dropdown-list button,
+.dropdown-list p,
+.dropdown-list li,
+.dropdown-list ul  {
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+
+
+
+.dropdown-list li.url {
+    padding: 10px 0 10px 0;
+}
+
+/*  */
+
+/* Dropdown menu */
+
+.dropdown-menu button img {
+    margin-left: 8px;
+    transition: all 0.2s;
+}
+
+.dropdown-menu ul li.element {
+    padding: 10px 0 10px 28px;
+}
+
+.dropdown-menu ul {
+    padding-top: 10px;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*  */
+
+/* Element */
+
+.element {
+    display: flex;
+    flex-direction: row;
+}
+
+.element-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.element p {
+    display: flex;
+    align-items: center;
+}
+
+/* li.dot::before {
+    content: ".";
+    font-size: 30px;
+    line-height: 0;
+    margin-right: 10px;
+ } */
+
+/*  */
+
+
+@media screen and (min-width: 1000px) {
+
+    .dropdown-list {
+        display: flex;
+    }
+
+    .dropdown-list button:hover,
+    .dropdown-list p:hover,
+    .dropdown-list li:hover,
+    .dropdown-list ul:hover,
+    li.btn:hover p {
+        color: black;
+    }
+
+    .dropdown-list > li {
+        margin: 0 39px 0 0;
+
+    }
+
+    li.element {
+        margin: 16px 20px 16px 20px;
+        cursor: pointer;
+    }
+
+    li.element p {
+        margin-left: 15px;
+    }
+
+    .dropdown-menu ul li.element {
+        padding: 0;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dropdown-menu ul {
+        display: block !important;
+        transform: translateY(-150%);
+        position: absolute;
+        margin: 0;
+        opacity: 0;
+        z-index: 1;
+        top: 100%;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+        transition: all 0.2s ease-out;
+        transition-delay: 0.2s;
+    }
+
+    .dropdown-menu:hover ul {
+        opacity: 1;
+        transition-delay: 0s;
+        transform: translateY(0);
+    }
+
+    .dropdown-menu button {
+        /* padding: 0.5rem; */
+    }
+
+    .dropdown-list li.url {
+        padding: 0;
+    }
+
+}
+

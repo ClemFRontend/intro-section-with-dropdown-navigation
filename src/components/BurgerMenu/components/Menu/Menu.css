@@ -1,0 +1,73 @@
+html, body {
+    /* Not working on mobile -> why ?????? */
+    overflow-x: hidden;
+    /*  */
+}
+
+.menu-wrapper {
+    /* display: none; */
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 240px;
+    background-color: white;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-out;
+    padding: 78px 21px 0 24px;
+}
+
+.dark .menu-wrapper {
+    background-color: black;
+}
+
+.background {
+    background-color: black;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    transition: opacity 0.2s ease-in;
+}
+
+@media screen and (min-width: 1000px) {
+
+
+    header {
+        justify-content: initial;
+    }
+
+    .background, .burger {
+        display: none;
+    }
+
+    .menu-wrapper {
+        display: block;
+        position: initial;
+        transform: initial !important;
+        width: 100%;
+        height: 42px;
+        padding: 0;
+    }
+
+    li.btn.btn-tiercary {
+        position: relative;
+        float: right;
+    }
+
+    .dropdown-list > li {
+        display: flex;
+        align-items: center;
+    }
+
+    li.btn.btn-secondary {
+        margin-right: 0;
+        min-width: initial;
+        width: 104px;
+        float: right;
+    }
+}

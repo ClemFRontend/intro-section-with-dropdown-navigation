@@ -1,0 +1,38 @@
+.burger {
+    position: absolute;
+    z-index: 4;
+    top: 25px;
+    right: 16px;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger label:hover {
+    cursor: pointer;
+}
+
+.burger label div {
+    width: 32px;
+    height: 2px;
+    background-color: black;
+    margin-top: 6px;
+    transition: all 0.2s ease-in;
+}
+
+.burger div:first-child {
+    margin-top: 0;
+}
+
+.burger input:checked ~ label div:nth-child(1) {
+    transform: translateY(8px) rotate(45deg)  ;
+}
+
+.burger input:checked ~ label div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger input:checked ~ label div:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}

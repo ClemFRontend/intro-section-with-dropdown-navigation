@@ -1,0 +1,54 @@
+.btn {
+    border: 0;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Epilogue';
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--almost-black);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    height: 48px;
+    width: 136px;
+    border-radius: 15px;
+    border: 2px var(--almost-black) solid;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: var(--almost-black)
+}
+
+.btn-secondary {
+    border: 1px solid var(--medium-grey);
+    border-radius: 14px;
+    min-width: 150px;
+    min-height: 32px;
+    color: var(--medium-grey);
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.btn-tiercary {
+    color: var(--medium-grey);
+}
+
+.btn-tiercary:hover {
+    text-decoration: underline;
+}
+
+.btn-secondary:hover {
+    border: solid black 1px;
+    color: black;
+}

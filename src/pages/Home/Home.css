@@ -1,0 +1,184 @@
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.container > img {
+    margin-top: 24px;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+.sub-container {
+    text-align: center;
+    padding: 47px 16px 0 16px;
+}
+
+
+.sub-container p {
+    margin-top: 16px;
+}
+
+.sub-container button {
+    margin: 24px 0 48px 0;
+}
+
+.clients-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.client-databiz {
+    width: 81px;
+    height: 14px;
+}
+
+.client-audiophile {
+    width: 53px;
+    height: 26px;
+}
+
+.client-meet {
+    width: 64px;
+    height: 14px;
+}
+
+.client-maker {
+    width: 59px;
+    height: 17px;
+}
+
+/* Buttons */
+
+.btn-tiercary:hover, .btn-primary:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.btn-secondary, .btn-tiercary  {
+    height: 42px;
+    padding: inherit;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1000px) {
+
+    html, body {
+        overflow: initial;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+    }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    main {
+        flex-grow: 1;
+        margin: 0 20px 0 20px;
+    }
+
+    .container {
+        flex-direction: row-reverse;
+        max-width: initial;
+        align-items: center;
+        max-width: 1145px;
+    }
+
+    .container > img {
+        content: url('../../assets/images/image-hero-desktop.png');
+        margin: 0 -16px 62px 0;
+        height: 640px;
+        width: 480px;
+    }
+
+
+    .sub-container {
+        text-align: initial;
+        padding: 0;
+        margin: 50px 0 0 19px;
+    }
+
+    .sub-container h1 {
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: -1.5px;
+    }
+
+    .sub-container h1 span {
+        display: inline-block;
+    }
+
+    .sub-container p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 48px;
+        width: 445px;
+    }
+
+    .sub-container button {
+        height: 56px;
+        width: 163px;
+        line-height: 28px;
+        font-size: 18px;
+        margin: 51px 0 0 0;
+    }
+
+    /* Clients */
+
+    .clients-container {
+        margin: 108px 0 0 0;
+        justify-content: initial;
+    }
+
+    .clients-container img {
+        margin-right: 38px;
+    }
+
+    .client-databiz {
+        width: 113px;
+        height: 20px;
+    }
+    
+    .client-audiophile {
+        width: 73px;
+        height: 36px;
+    }
+
+    .client-meet {
+        width: 89px;
+        height: 20px;
+        margin-left: 3px;
+    }
+    
+    .client-maker {
+        width: 82px;
+        height: 24px;
+        margin-left: 3px;
+    }
+
+    /*  */
+
+}
