@@ -25,10 +25,22 @@
     border: 2px var(--almost-black) solid;
 }
 
+.dark .btn-primary {
+    background-color: var(--dark-theme-text-color);
+    color: black;
+    border: 2px var(--dark-theme-text-color) solid;
+}
+
 .btn-primary:hover {
     background-color: white;
     color: var(--almost-black)
 }
+
+.dark .btn-primary:hover {
+    background-color: transparent;
+    color: var(--dark-theme-text-color);
+}
+
 
 .btn-secondary {
     border: 1px solid var(--medium-grey);
@@ -38,6 +50,10 @@
     color: var(--medium-grey);
     transition: all 0.2s;
     background-color: transparent;
+}
+
+.dark .btn-secondary {
+    border-color: var(--dark-theme-text-color);
 }
 
 .btn-tiercary {
@@ -51,4 +67,9 @@
 .btn-secondary:hover {
     border: solid black 1px;
     color: black;
+}
+
+.dark .btn-secondary:hover {
+    border-color: white;
+    color: white;
 }

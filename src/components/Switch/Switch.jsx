@@ -1,7 +1,7 @@
 import React from 'react'
-import './Switch1.css'
+import './Switch.css'
 
-function Switch1(props) {
+function Switch(props) {
     const { name, handleChange, checked } = props
 
     return (
@@ -14,4 +14,4 @@ function Switch1(props) {
     )
 }
 
-export default Switch1
+export default Switch

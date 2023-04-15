@@ -5,11 +5,11 @@
 }
 
 .switch-container svg:first-child {
-    padding-right: 8px;
+    margin-right: 8px;
 }
 
 .switch-container svg:last-child {
-    padding-left: 8px;
+    margin-left: 8px;
 }
 
 .switch-container svg, .switch-container:hover {
@@ -19,8 +19,9 @@
 .switch-container svg {
     translate: 0 2px;
     transition: 0.1s;
+    color: var(--medium-grey);
 }
 
-.dark svg {
-    color: white;
+.dark .switch-container svg {
+    color: var(--dark-theme-text-color);
 }
