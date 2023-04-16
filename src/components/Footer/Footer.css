@@ -1,0 +1,16 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: var(--almost-black);
+    font-weight: 700;
+}
+
+.dark footer a {
+    color: var(--dark-theme-text-color);
+    font-weight: 700;
+}

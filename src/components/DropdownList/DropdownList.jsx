@@ -88,14 +88,7 @@ export function DropdownMenu({title, className, icon, children, ...props}) {
  */
 export function Element({notAText, icon, hideDot=false, onClick, children, ...props}) {
 
-    // let isDot = ""
-    // if (icon === undefined && hideDot === false) {
-    //     console.log("hello")
-    //     isDot = "dot"
-    // }
-
     return (
-        // <li className={`element ${isDot}`} onClick={onClick}>
         <li className="element" onClick={onClick} {...props} >
             {icon !== undefined && 
                 <div className='element-icon'>

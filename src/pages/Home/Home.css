@@ -90,31 +90,22 @@ main img {
     }
 
     body {
-        min-height: 100vh;
-        display: flex;
-    }
-
-    #root {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
+        /* min-height: initial; */
     }
 
     main {
-        flex-grow: 1;
-        margin: 0 20px 0 20px;
+        margin: 67px 20px 0 20px;
     }
 
     .container {
         flex-direction: row-reverse;
-        max-width: initial;
         align-items: center;
         max-width: 1145px;
     }
 
     .container > img {
         content: url('../../assets/images/image-hero-desktop.png');
-        margin: 0 -16px 62px 0;
+        margin: 0px -17px 64px 0;
         height: 640px;
         width: 480px;
     }
@@ -123,30 +114,31 @@ main img {
     .sub-container {
         text-align: initial;
         padding: 0;
-        margin: 50px 0 0 19px;
+        margin: 48px 0 0 17px;
     }
 
     .sub-container h1 {
         font-size: 80px;
         line-height: 80px;
-        letter-spacing: -1.5px;
+        letter-spacing: -1.1px;
     }
 
     .sub-container h1 span {
         display: inline-block;
+        margin-top: 1px;
     }
 
     .sub-container p {
         font-size: 18px;
         line-height: 28px;
         margin-top: 48px;
+        letter-spacing: 0.053px;
         width: 445px;
     }
 
     .sub-container button {
         height: 56px;
         width: 163px;
-        line-height: 28px;
         font-size: 18px;
         margin: 51px 0 0 0;
     }
@@ -159,7 +151,7 @@ main img {
     }
 
     .clients-container img {
-        margin-right: 38px;
+        margin-right: 39px;
     }
 
     .client-databiz {
