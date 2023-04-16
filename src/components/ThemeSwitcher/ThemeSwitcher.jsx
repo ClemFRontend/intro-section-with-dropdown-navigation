@@ -7,7 +7,7 @@ const MOON_ICON = <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" da
 
 function ThemeSwitcher() {
 
-    const [darkTheme, setDarkTheme] = useState(localStorage.getItem('theme') === 'dark' ? false : true)
+    const [darkTheme, setDarkTheme] = useState(localStorage.getItem('theme') === 'light' ? false : true)
 
     useEffect(() => {
         const localStorageTheme = localStorage.getItem('theme')

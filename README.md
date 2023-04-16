@@ -30,12 +30,12 @@ Your users should be able to:
 
 ### In addition
 
-- I added a feature to toggle the theme (inspired from [Melvin Aguilar](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-tmQXOQU78e) thks for him) 🚀
+- I added a feature to toggle the theme (inspired from [Melvin Aguilar](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-tmQXOQU78e), thks for him) 🚀
 - I also implemented React Router and implement an error page. Click on a click to see the result 😎
 
 ### Result
 
-![](./images/result_desktop.png)
+![](./images/result-desktop.png)
 
 ### Links
 
