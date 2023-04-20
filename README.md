@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive card details form solution
+# Frontend Mentor - Intro section with dropdown navigation
 
 This is a solution to the [Intro section with dropdown navigation](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5) 🎉
 
